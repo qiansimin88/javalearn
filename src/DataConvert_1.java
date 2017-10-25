@@ -10,5 +10,8 @@ public class DataConvert_1 {
         double d = 3.1415;
         int i = (int)d;
         System.out.println( i );   //3
+
+        byte b = (byte)299;
+        System.out.println( b );  //43
     }
 }
