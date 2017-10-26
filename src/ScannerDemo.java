@@ -11,6 +11,7 @@
  *     scanner类，作用，让我们在命令行中 接受键盘的输入
  */
 import java.util.Scanner;   //导入工具包
+
 public class ScannerDemo {
     public static void main ( String[] args ) {
         Scanner keyboard = new Scanner( System.in );
