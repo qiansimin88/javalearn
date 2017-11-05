@@ -3,6 +3,8 @@
  * 定义数组容器，强制数据类型
  * 必须有数据类型 大小，就是数据的个数，个数是恒定的 是不能变化的
  * 数据类型[] 变量名  = new 数据类型[存储的个数]
+ *
+ *
  */
 public class ArrayDemo {
     public static void main ( String[] args ) {
