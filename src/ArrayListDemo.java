@@ -11,7 +11,7 @@ public class ArrayListDemo {
     public static void main( String[] args ) {
         //创建集合 指定存贮类型
         //字符串
-        ArrayList<String> itemArrayList = new ArrayList<String>();
+        ArrayList<String> itemArrayList = new ArrayList <String>();
 
         //整形 Int
         ArrayList<Integer> intArray = new ArrayList<Integer>();
