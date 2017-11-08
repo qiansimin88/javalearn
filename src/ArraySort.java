@@ -25,6 +25,8 @@ public class ArraySort {
         ShowArray( array );
     }
 
+    /*  冒泡排序
+    数组相邻的比 ，比完 最大的会变成最右边的，相当于水里的气泡上升一样。然后最大的不动  在比其他的*/
     public static void BubbleSort ( int[] array ) {
         int count = array.length;
         int temp;
@@ -40,9 +42,6 @@ public class ArraySort {
         }
         ShowArray( array );
     }
-
-  /*  冒泡排序
-    数组相邻的比 ，比完 最大的会变成最右边的，相当于水里的气泡上升一样。然后最大的不动  在比其他的*/
 
     public static void ShowArray ( int[] array ) {
         for( int i = 0; i < array.length; i++ ) {
