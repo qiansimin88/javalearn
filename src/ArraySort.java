@@ -6,7 +6,7 @@ public class ArraySort {
     public static void main( String[] args ) {
         int[] tempArrray = { 4, 3, 3, 2, 1};
         SelectSort( tempArrray );   //选择排序 1,2,3,3,4
-        BubbleSort( tempArrray );  //冒泡排序 1,2,3,3,4
+//        BubbleSort( tempArrray );  //冒泡排序 1,2,3,3,4
     }
 
     /*选择排序
