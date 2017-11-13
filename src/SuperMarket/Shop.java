@@ -30,6 +30,12 @@ public class Shop {
                 case 1:
                     showFruitList( array );
                     break;
+                case 2:
+                    addFruit( array );
+                    break;
+                case 3:
+                    deleteFruit( array );
+                    break;
             }
         }
 
@@ -61,6 +67,44 @@ public class Shop {
     }
 
     //添加
+    public static void addFruit( ArrayList<FruitItem> a ) {
+        System.out.println("选择的是添加商品");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("请输入商品的编号");
+        int Id = sc.nextInt();
+        System.out.println("请输入商品的名字");
+        String name = sc.next();
+        System.out.println("请输入商品的单价");
+        double price = sc.nextDouble();
+
+        //新增一个实例
+        FruitItem item = new FruitItem();
+        item.Id = Id;
+        item.name = name;
+        item.price = price;
+
+        //添加
+        a.add( item );
+    }
+
+    //删除
+    public static void deleteFruit( ArrayList<FruitItem> a ) {
+        System.out.println("选择的是删除商品");
+        System.out.println("请输入删除商品的ID");
+        Scanner sc = new Scanner(System.in);
+                int Id = sc.nextInt();
+
+        for (int i = 0; i < a.size(); i++) {
+            FruitItem item = a.get(i);
+            if( Id == item.Id ) {
+                a.remove(i);
+                System.out.println("删除成功");
+                return;
+            }
+        }
+        //假如都没找到
+        System.out.println("没找到您输入的编号");
+    }
 
   /*  实现商品数据初始化
     先将一部分数据 存贮到集合*/
@@ -72,12 +116,12 @@ public class Shop {
             f1.price = 12.7;
 
         FruitItem f2 = new FruitItem();
-            f2.Id = 9527;
+            f2.Id = 9528;
             f2.name = "巢湖咸鱼";
             f2.price = 122.7;
 
         FruitItem f3 = new FruitItem();
-            f3.Id = 9527;
+            f3.Id = 9529;
             f3.name = "合肥萝卜";
             f3.price = 23.34;
 
