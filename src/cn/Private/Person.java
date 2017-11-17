@@ -15,7 +15,7 @@ public class Person {
         System.out.println( name + "....." + age );
     }
 
-    //暴露方法供其他类  使用 private 成员变量, 方法名必须set开头 + 变量名
+    //暴露设置方法供其他类  使用 private 成员变量, 方法名必须set开头 + 变量名
     public void setAge ( int a ) {
         //可以在这个set方法内 对 私有private变量进行限制  这样就提现了 private的安全有点 防止其他类随意更改赋值
         if( a < 0 || a > 20) {
@@ -23,5 +23,9 @@ public class Person {
         }else {
             age = a;
         }
+    }
+    //暴露读取方法供其他类  使用 private 成员变量, 方法名必须get开头 + 变量名
+    public int getAge() {
+        return age;
     }
 }

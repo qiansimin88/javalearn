@@ -8,7 +8,11 @@ public class PersonTest {
         Person p = new Person();
             p.name = "qiansimin";
             //p.age = 20;
+        //设置
             p.setAge( 12 );
             p.speak();
+        //读取
+            int getSetAge = p.getAge();
+        System.out.println(getSetAge);
     }
 }
